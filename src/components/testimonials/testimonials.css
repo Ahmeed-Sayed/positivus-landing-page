@@ -1,0 +1,17 @@
+.swiper-pagination-bullet {
+    width: 15px; 
+    height: 15px; 
+    background-image: url('/paginationIcon.svg');
+    background-size: cover; 
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-image: url('/paginationIconActive.svg');
+    background-color: transparent !important;
+    border: none !important; 
+  }
+  
+  .swiper-pagination{
+    padding-bottom: 48px;
+  }
