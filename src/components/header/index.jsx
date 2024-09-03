@@ -39,31 +39,31 @@ export default function Header() {
           <div className="flex flex-col lg:flex-row gap-3">
             <a
               href="#"
-              className="hover:bg-[#191A23] w-max rounded p-2 hover:text-white"
+              className="hover:bg-custom-black w-max rounded p-2 hover:text-white"
             >
               About us
             </a>
             <a
               href="#"
-              className="hover:bg-[#191A23] w-max rounded p-2 hover:text-white"
+              className="hover:bg-custom-black w-max rounded p-2 hover:text-white"
             >
               Service
             </a>
             <a
               href="#"
-              className="hover:bg-[#191A23] w-max rounded p-2 hover:text-white"
+              className="hover:bg-custom-black w-max rounded p-2 hover:text-white"
             >
               Use Cases
             </a>
             <a
               href="#"
-              className="hover:bg-[#191A23] w-max rounded p-2 hover:text-white"
+              className="hover:bg-custom-black w-max rounded p-2 hover:text-white"
             >
               Pricing
             </a>
             <a
               href="#"
-              className="hover:bg-[#191A23] w-max rounded p-2 hover:text-white"
+              className="hover:bg-custom-black w-max rounded p-2 hover:text-white"
             >
               Blog
             </a>
