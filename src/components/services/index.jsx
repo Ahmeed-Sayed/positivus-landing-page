@@ -16,14 +16,14 @@ export default function Services() {
     {
       image: seo,
       title: "Search engine optimization",
-      titleBgColor: "[#B9FF66]",
+      titleBgColor: "custom-green",
       bgColor: "stone-100",
     },
     {
       image: payPerClick,
       title: "Pay-per-click advertising",
       titleBgColor: "white",
-      bgColor: "[#B9FF66]",
+      bgColor: "custom-green",
     },
     {
       image: socialMedia,
@@ -34,19 +34,19 @@ export default function Services() {
     {
       image: emailMarketing,
       title: "Email Marketing",
-      titleBgColor: "[#B9FF66]",
+      titleBgColor: "custom-green",
       bgColor: "stone-100",
     },
     {
       image: contentCreation,
       title: "Content Creation",
       titleBgColor: "white",
-      bgColor: "[#B9FF66]",
+      bgColor: "custom-green",
     },
     {
       image: analytics,
       title: "Analytics and Tracking",
-      titleBgColor: "[#B9FF66]",
+      titleBgColor: "custom-green",
       bgColor: "black",
     },
   ];
@@ -54,7 +54,7 @@ export default function Services() {
   return (
     <>
       <Section title={title} subText={subText}>
-        <div className="grid grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-16">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

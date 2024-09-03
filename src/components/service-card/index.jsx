@@ -17,7 +17,7 @@ export default function ServiceCard({ title, titleBgColor, image, bgColor }) {
 
   return (
     <div
-      className={`p-[50px] grid grid-cols-2 border border-black border-b-4 gap-2 rounded-3xl ${bgClass}`}
+      className={`p-12 lg:p-[50px]  grid grid-cols-1 lg:grid-cols-2 border border-black border-b-4 gap-2 rounded-3xl ${bgClass}`}
     >
       <div className="flex flex-col justify-between text-start text-base">
         <span
@@ -27,10 +27,10 @@ export default function ServiceCard({ title, titleBgColor, image, bgColor }) {
           {title}
         </span>
         <a href="#">
-          <div className="flex flex-row justify-start gap-4 text-black items-center">
+          <div className="hidden lg:flex flex-row justify-start gap-4 text-black items-center ">
             <img src={bgColor === "black" ? lightArrowLink : arrowLink} />
             <span
-              className={`text-[20px] text-base ${
+              className={`text-[20px] text-base  ${
                 bgColor === "black" && "text-white"
               }`}
             >
@@ -39,7 +39,12 @@ export default function ServiceCard({ title, titleBgColor, image, bgColor }) {
           </div>
         </a>
       </div>
-      <img src={image} alt="card image" />
+      <div className="flex justify-between">
+        <div className="flex lg:hidden flex-row items-end">
+          <img src={bgColor === "black" ? lightArrowLink : arrowLink} />
+        </div>
+        <img src={image} alt="card image" />
+      </div>
     </div>
   );
 }

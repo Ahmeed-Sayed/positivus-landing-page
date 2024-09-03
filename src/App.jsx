@@ -16,8 +16,8 @@ function App() {
     <div className="px-3 md:px-10 py-8 md:py-14 font-positivus">
       <Header />
       <Hero />
-      {/* <Services />
-      <Proposal />
+      <Services />
+      {/* <Proposal />
       <CaseStudies />
       <WorkingProcess />
       <Team />
