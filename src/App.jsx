@@ -13,10 +13,9 @@ import WorkingProcess from "./components/working-process";
 
 function App() {
   return (
-    <div className="px-10">
+    <div className="px-3 md:px-10 py-8 md:py-14">
       <Header />
       <Hero />
-      <Sponsors />
       <Services />
       <Proposal />
       <CaseStudies />
@@ -24,7 +23,6 @@ function App() {
       <Team />
       <Testimonials />
       <ContactUs />
-      <Footer />
     </div>
   );
 }
