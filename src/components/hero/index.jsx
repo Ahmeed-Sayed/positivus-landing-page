@@ -1,10 +1,10 @@
 import React from "react";
 import illustration from "/illustration.svg";
 import illustrationMob from "/illustrationMob.svg";
-import useIsMobile from "../../custom-hooks/isMobile";
+import { useMediaQuery } from "@mui/material";
 
 export default function Hero() {
-  const isMobile = useIsMobile();
+  const xMobScreen = useMediaQuery("(max-width:1024px)");
 
   return (
     <div className="flex flex-col my-16 bg-white rounded-3xl  lg:flex-row lg:justify-between ">
@@ -27,7 +27,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex justify-center order-1 lg:order-2 lg:w-3/5">
-        {isMobile ? (
+        {xMobScreen ? (
           <div className="flex justify-center">
             <img src={illustrationMob} alt="Image" />
           </div>

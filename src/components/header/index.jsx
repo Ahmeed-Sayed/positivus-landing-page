@@ -2,18 +2,17 @@ import React, { useState } from "react";
 import logo from "/logo.svg";
 import logoMob from "/logoMob.svg";
 import ReorderIcon from "@mui/icons-material/Reorder";
-import useIsMobile from "../../custom-hooks/isMobile";
+import { useMediaQuery } from "@mui/material";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const isMobile = useIsMobile();
-
+  const xMobScreen = useMediaQuery("(max-width:1024px)");
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <div className="flex flex-row justify-between items-baseline lg:items-center">
-      {isMobile ? (
+      {xMobScreen ? (
         <img src={logoMob} alt="Logo" />
       ) : (
         <img src={logo} alt="Logo" />

@@ -1,5 +1,4 @@
 import React from "react";
-import SplitSection from "../split-section";
 import proposal from "/proposal.svg";
 export default function Proposal() {
   return (
