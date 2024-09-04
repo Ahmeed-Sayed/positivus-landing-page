@@ -1,6 +1,6 @@
 import React from "react";
-import illustration from "/illustration.svg";
 import illustrationMob from "/illustrationMob.svg";
+import illustration from "/illustration.svg";
 import { useMediaQuery } from "@mui/material";
 
 export default function Hero() {
