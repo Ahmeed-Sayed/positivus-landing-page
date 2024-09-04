@@ -17,8 +17,8 @@ export default function TeamCard({
         <div>
           <img src={`/${image}.svg`} />
         </div>
-        <div className="flex flex-col gap-3  justify-end text-left">
-          <span className="font-semibold text-lg">{name}</span>
+        <div className="flex flex-col gap-3  justify-end text-left ">
+          <span className="font-semibold text-lg  w-3/5 ">{name}</span>
           <span>{position}</span>
         </div>
         <div className="absolute right-0 top-0">

@@ -30,12 +30,12 @@ export default function Testimonials() {
       >
         {teamTestimonials.map((testimony, index) => {
           return (
-            <SwiperSlide key={testimony.id} className="mt-20 mb-[150px] px-8">
+            <SwiperSlide key={testimony.id} className="mt-5 lg:mt-20 mb-[150px] px-8">
               <div className="flex flex-col  ">
-                <div className="border-2 border-custom-green  rounded-[45px] px-14 pt-12 pb-14 text-left  ">
+                <div className="border-2 border-custom-green tooltip relative rounded-[45px] px-3 lg:px-14 pt-4 lg:pt-12 pb-8 lg:pb-14 text-justify  ">
                   <span>{testimony.text}</span>
                 </div>
-                <div className="text-xl flex flex-col text-left mt-6 ps-20 pt-5 pb-16 ">
+                <div className="text-xl flex flex-col text-left mt-6 ps-10 lg:ps-20 pt-5 pb-8 lg:pb-16 ">
                   <span className="text-custom-green text-xl">
                     {testimony.name}
                   </span>

@@ -24,7 +24,7 @@ export default function ContactUs() {
 
   return (
     <Section {...sectionContent} marginTop="mt-[150px]">
-      <div className="border rounded-[45px] flex flex-row justify-center lg:justify-between bg-[#F3F3F3] ps-6 pt-4 lg:ps-24 lg:pt-16 ">
+      <div className="border rounded-[45px] flex flex-row  lg:justify-between bg-[#F3F3F3] ps-6 pt-4 lg:ps-24 lg:pt-16 ">
         <div className="flex flex-col gap-4 lg:w-2/5 ">
           <Formik
             initialValues={{
@@ -150,10 +150,10 @@ export default function ContactUs() {
             )}
           </Formik>
         </div>
-        <div className="hidden lg:flex justify-end">
+        <div className="hidden lg:flex justify-between w-fit">
           <img
             src={contactUsSvg}
-            className="absolute right-[-134px]"
+            className="absolute right-[-283px]"
             alt="Contact Us"
           />
         </div>

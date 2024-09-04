@@ -1,0 +1,32 @@
+[
+  {
+    "id": "01",
+    "title": "Consultation",
+    "text": "During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements."
+  },
+  {
+    "id": "02",
+    "title": "Research and Strategy Development",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla iusto dolorum laboriosam veniam vel eos, eum debitis saepe autem quam odio voluptate numquam sunt, aliquam reiciendis quisquam facilis ullam."
+  },
+  {
+    "id": "03",
+    "title": "Implementation",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla iusto dolorum laboriosam veniam vel eos, eum debitis saepe autem quam odio voluptate numquam sunt, aliquam reiciendis quisquam facilis ullam."
+  },
+  {
+    "id": "04",
+    "title": "Monitoring and Optimization",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla iusto dolorum laboriosam veniam vel eos, eum debitis saepe autem quam odio voluptate numquam sunt, aliquam reiciendis quisquam facilis ullam."
+  },
+  {
+    "id": "05",
+    "title": "Reporting and Communication",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla iusto dolorum laboriosam veniam vel eos, eum debitis saepe autem quam odio voluptate numquam sunt, aliquam reiciendis quisquam facilis ullam."
+  },
+  {
+    "id": "06",
+    "title": "Continual Improvement",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nulla iusto dolorum laboriosam veniam vel eos, eum debitis saepe autem quam odio voluptate numquam sunt, aliquam reiciendis quisquam facilis ullam."
+  }
+]

@@ -17,11 +17,14 @@
   }
 
 
-  .tooltip:before {
+
+  
+  .tooltip::before {
     content: "";
+    width: 15px;
     position: absolute;
     left: 20%;
-    top: 62%;
+    top: 100%;
     border-top: 20px solid #B9FF66;
     border-right: 20px solid transparent;
   }
