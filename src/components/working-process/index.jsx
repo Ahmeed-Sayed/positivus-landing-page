@@ -9,7 +9,7 @@ import { styled } from "@mui/material/styles";
 import { Divider } from "@mui/material";
 import Section from "../section";
 import { useMediaQuery } from "@mui/material";
-import processes from "./owrking-process-data.json";
+import processes from "./working-process-data.json";
 export default function WorkingProcess() {
   const [expanded, setExpanded] = useState("01");
   const xMobScreen = useMediaQuery("(max-width:1024px)");
