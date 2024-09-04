@@ -1,5 +1,5 @@
 import React from "react";
-import illustrationMob from "/illustrationMob.svg";
+// import illustrationMob from "/illustrationMob.svg";
 import illustration from "/illustration.svg";
 import { useMediaQuery } from "@mui/material";
 
@@ -27,15 +27,15 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex justify-center order-1 lg:order-2 lg:w-3/5">
-        {xMobScreen ? (
+        {/* {xMobScreen ? (
           <div className="flex justify-center">
             <img src={illustrationMob} alt="Image" />
           </div>
-        ) : (
-          <div className="flex flex-row justify-center">
-            <img src={illustration} alt="Image" />
-          </div>
-        )}
+        ) : ( */}
+        <div className="flex flex-row justify-center">
+          <img src={illustration} alt="Image" />
+        </div>
+        {/* )} */}
       </div>
     </div>
   );
