@@ -43,7 +43,7 @@ export default function ServiceCard({ title, titleBgColor, image, bgColor }) {
         <div className="flex lg:hidden flex-row items-end">
           <img src={bgColor === "black" ? lightArrowLink : arrowLink} />
         </div>
-        <img src={image} alt="card image" />
+        <img src={`/${image}.svg`} alt="card image" />
       </div>
     </div>
   );

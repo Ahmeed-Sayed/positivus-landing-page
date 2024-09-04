@@ -15,7 +15,7 @@ export default function TeamCard({
     >
       <div className="flex flex-row gap-4 relative mb-6">
         <div>
-          <img src={image} />
+          <img src={`/${image}.svg`} />
         </div>
         <div className="flex flex-col gap-3  justify-end text-left">
           <span className="font-semibold text-lg">{name}</span>

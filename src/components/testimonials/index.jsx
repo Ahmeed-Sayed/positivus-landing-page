@@ -5,37 +5,21 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./testimonials.css";
 import { Pagination, Navigation } from "swiper/modules";
+import teamTestimonials from "./testimonials-data.json";
+import { useMediaQuery } from "@mui/material";
 export default function Testimonials() {
+  const xMobScreen = useMediaQuery("(max-width:1024px)");
+
   const sectionContent = {
     title: "Testimonials",
     subText:
       "Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services",
   };
 
-  const teamTestimonials = [
-    {
-      id: "0031585",
-      text: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
-      name: "John Smith",
-      position: "Marketing Director at XYZ Corp",
-    },
-    {
-      id: "0031586",
-      text: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
-      name: "John Smith",
-      position: "Marketing Director at XYZ Corp",
-    },
-    {
-      id: "0031587",
-      text: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."',
-      name: "John Smith",
-      position: "Marketing Director at XYZ Corp",
-    },
-  ];
   return (
     <Section marginTop={"mt-[100px]"} {...sectionContent}>
       <Swiper
-        slidesPerView={"2"}
+        slidesPerView={xMobScreen ? "1" : "2"}
         centeredSlides={true}
         spaceBetween={30}
         pagination={{
@@ -46,7 +30,7 @@ export default function Testimonials() {
       >
         {teamTestimonials.map((testimony, index) => {
           return (
-            <SwiperSlide key={testimony.id} className="mt-20 mb-[150px]">
+            <SwiperSlide key={testimony.id} className="mt-20 mb-[150px] px-8">
               <div className="flex flex-col  ">
                 <div className="border-2 border-custom-green  rounded-[45px] px-14 pt-12 pb-14 text-left  ">
                   <span>{testimony.text}</span>

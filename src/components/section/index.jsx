@@ -8,7 +8,9 @@ export default function Section({ title, subText, marginTop, children }) {
           <span className="bg-custom-green p-1 rounded-lg text-[40px] font-semibold">
             {title}
           </span>
-          <span className="w-3/4 lg:w-2/4 text-justify ">{subText}</span>
+          <span className="w-3/4 lg:w-2/4 text-center lg:text-justify">
+            {subText}
+          </span>
         </div>
         {children}
       </div>

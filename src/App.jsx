@@ -13,16 +13,17 @@ import WorkingProcess from "./components/working-process";
 
 function App() {
   return (
-    <div className="px-3 md:px-10 py-8 md:py-14 font-positivus">
+    <div className="px-3 md:px-10 pt-8 md:pt-14 font-positivus relative">
       <Header />
       <Hero />
       <Services />
       <Proposal />
       <CaseStudies />
-      {/* <WorkingProcess /> */}
-      {/* <Team /> */}
-      {/* <Testimonials /> */}
-      {/* <ContactUs /> */}
+      <WorkingProcess />
+      <Team />
+      <Testimonials />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }
