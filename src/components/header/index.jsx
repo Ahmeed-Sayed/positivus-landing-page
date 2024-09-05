@@ -18,15 +18,17 @@ export default function Header() {
         <img src={logo} alt="Logo" />
       )}
       <div>
-        <button
+        <div className="flex justify-end">
+          <button
           onClick={toggleMenu}
           type="button"
-          className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-[#191A23] dark:focus:ring-gray-600"
+          className="items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-[#191A23] dark:focus:ring-gray-600"
           aria-controls="mobile-menu-2"
           aria-expanded={isOpen}
         >
           <ReorderIcon />
         </button>
+        </div>
         <div
           className={`${
             isOpen

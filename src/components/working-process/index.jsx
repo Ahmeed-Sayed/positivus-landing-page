@@ -24,14 +24,14 @@ export default function WorkingProcess() {
     "&::before": {
       display: "none",
     },
-    padding: xMobScreen? "15px 20px" :"40px 60px",
+    padding: xMobScreen ? "15px 20px" : "40px 60px",
     marginBottom: "30px",
     borderRadius: "45px",
     borderWidth: "2px",
     borderBottomWidth: "5px",
     borderColor: "black",
     backgroundColor: "#F3F3F3",
-    justifyContent:"space-between",
+    justifyContent: "space-between",
   }));
   const sectionContent = {
     title: "Our Working Process",
@@ -49,26 +49,39 @@ export default function WorkingProcess() {
           <AccordionSummary
             expandIcon={
               expanded === process.id ? (
-                <RemoveCircleOutlineIcon
-                  fontSize={xMobScreen ? "large":""}
-                />
+                <RemoveCircleOutlineIcon fontSize={xMobScreen ? "" : "large"} />
               ) : (
-                <AddCircleOutlineIcon fontSize={xMobScreen ? "large":""} />
+                <AddCircleOutlineIcon fontSize={xMobScreen ? "" : "large"} />
               )
             }
             aria-controls="panel1-content"
             id="panel1-header"
           >
-            <Typography sx={{ fontSize: xMobScreen? "16px":"60px", marginRight: "25px" }}>
+            <Typography
+              sx={{
+                fontSize: xMobScreen ? "16px" : "60px",
+                marginRight: "25px",
+              }}
+            >
               {process.id}
             </Typography>
-            <Typography sx={{ fontSize: xMobScreen? "16px":"60px", alignSelf:"center"}}>
+            <Typography
+              sx={{
+                fontSize: xMobScreen ? "16px" : "60px",
+              }}
+            >
               {process.title}
             </Typography>
           </AccordionSummary>
           <Divider />
           <AccordionDetails>
-            <Typography>{process.text}</Typography>
+            <Typography
+              sx={{
+                fontSize: xMobScreen ? "12px" : "30px",
+              }}
+            >
+              {process.text}
+            </Typography>
           </AccordionDetails>
         </CustomAccordion>
       ))}

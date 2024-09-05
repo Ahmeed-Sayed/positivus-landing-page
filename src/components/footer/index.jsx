@@ -3,8 +3,10 @@ import positivusLight from "/positivusLight.svg";
 import socialLinkedLight from "/socialLinkedLight.svg";
 import socialFacebookLight from "/socialFacebookLight.svg";
 import socialXLight from "/socialXLight.svg";
+import { useMediaQuery } from "@mui/material";
 import { Divider } from "@mui/material";
 export default function Footer() {
+  const xMobScreen = useMediaQuery("(max-width:1024px)");
   const positivusContactData = {
     email: "info@positivus.com",
     phone: "555-567-8901",
@@ -73,11 +75,22 @@ export default function Footer() {
         </div>
       </div>
       <div>
+      <div className="lg:hidden flex lg:flex-row gap-5 justify-center mb-5">
+            <a>
+              <img src={socialLinkedLight} />
+            </a>
+            <a>
+              <img src={socialFacebookLight} />
+            </a>
+            <a>
+              <img src={socialXLight} />
+            </a>
+          </div>
         <Divider
           color="white"
-          sx={{ marginBottom: "50px", marginTop: "0px" }}
+          sx={{ marginBottom: xMobScreen? "20px": "50px", marginTop: "0px" }}
         />
-        <div className="flex flex-col items-center lg:flex-row gap-10">
+        <div className="flex flex-col items-center lg:flex-row gap-5 lg:gap-10">
           <span>© 2023 Positivus. All Rights Reserved.</span>
           <a href="#" className="underline">
             Privacy Policy

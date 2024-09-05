@@ -11,14 +11,13 @@ export default function TeamCard({
   return (
     <div
       className="grid grid-cols-1 divide-y divide-black  py-10 px-[35px] border-2 border-b-4 rounded-[45px] border-black "
-      key={id}
     >
       <div className="flex flex-row gap-4 relative mb-6">
         <div>
           <img src={`/${image}.svg`} />
         </div>
         <div className="flex flex-col gap-3  justify-end text-left ">
-          <span className="font-semibold text-lg  w-3/5 ">{name}</span>
+          <span className="font-semibold text-lg  w-3/5 lg:w-fit ">{name}</span>
           <span>{position}</span>
         </div>
         <div className="absolute right-0 top-0">
