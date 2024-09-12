@@ -52,13 +52,13 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row  gap-6 lg:gap-16">
-        <div className="flex flex-col gap-4 text-center items-center lg:text-left mb-2">
+        <div className="flex flex-col gap-4  items-center lg:text-left mb-2">
           <span className="bg-custom-green text-black text-xl font-semibold w-fit rounded-lg px-2 my-2">
             Contact us:
           </span>
           <span>Email: {positivusContactData.email}</span>
           <span>Phone: {positivusContactData.phone}</span>
-          <span>Address: {positivusContactData.address}</span>
+          <span className="text-center">Address: {positivusContactData.address}</span>
         </div>
         <div className="bg-[#292A32] px-3 py-5 lg:px-10 lg:py-14 flex flex-col lg:flex-row gap-5 rounded-lg items-center  ">
           <input

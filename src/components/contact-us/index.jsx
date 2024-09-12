@@ -24,8 +24,8 @@ export default function ContactUs() {
 
   return (
     <Section {...sectionContent} marginTop="mt-[150px]">
-      <div className="border rounded-[45px] flex flex-row  lg:justify-between bg-[#F3F3F3] ps-6 pt-4 lg:ps-24 lg:pt-16 ">
-        <div className="flex flex-col gap-4 lg:w-2/5 ">
+      <div className="border rounded-[45px] flex flex-row  lg:justify-between bg-[#F3F3F3] px-6 pt-4 lg:ps-24 lg:pt-16 ">
+        <div className="flex flex-col gap-4 lg:w-2/5  ">
           <Formik
             initialValues={{
               name: "",
