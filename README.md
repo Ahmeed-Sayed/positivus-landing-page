@@ -21,11 +21,11 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Ahmeed-Sayed/positivus-landing-page.git
 
 2. Navigate to the project directory
     ```
-    cd your-repo-name
+    cd positivus-landing-page
 
 4. Install dependacies:
     ```
