@@ -4,6 +4,12 @@
 
 This project is a responsive landing page built using **React**, **JavaScript**, **MUI**, and **Tailwind CSS**. It was designed in Figma and converted into a fully functional web page.
 
+## Objectives
+
+- **React Practice**: To enhance my skills in building React applications.
+- **Figma Conversion**: To practice converting Figma designs into responsive web pages.
+- **Tailwind CSS**: To learn and practice using Tailwind CSS for styling.
+
 ## Features
 
 - **Responsive Design**: Adapts seamlessly to different screen sizes.
